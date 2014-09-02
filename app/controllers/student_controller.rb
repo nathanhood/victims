@@ -1,6 +1,9 @@
 class StudentController < ApplicationController
 
   def index
-    @student = Student.create()
+    @student = Student.new
+  end
+
+  def create
   end
 end
