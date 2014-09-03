@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Choosing a victim" do
   it 'can return the first valid choice' do
+
     student_1 = Fabricate(:student)
     Fabricate(:student)
     Fabricate(:student)

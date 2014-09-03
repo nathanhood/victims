@@ -62,7 +62,6 @@ RSpec.configure do |config|
     #   - http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
     expectations.syntax = [:expect, :should]
   end
-
 =begin
   # rspec-mocks config goes here. You can use an alternate test double
   # library (such as bogus or mocha) by changing the `mock_with` option here.
