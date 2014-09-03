@@ -1,5 +1,22 @@
 %h1 Victims
 
+- if notice.present?
+  .alert-box.success{ "data-alert" => "" }
+    = notice
+    %a.close{ href: "#" } &times;
+- if alert.present?
+  .alert-box.alert{ "data-alert" => "" }
+    = alert
+    %a.close{ href: "#" } &times;
+= yield
+
+= button_to "Pick a Victim", { controller: :students, action: :victimize }
+
 = simple_form_for @student do |f|
   = f.input :name, label: "Name"
   = f.submit "Add Student"
+
+- @students.each do |s|
+  %ul
+    %li
+      %p #{s.name} - #{time_ago_in_words(s.last_call)}

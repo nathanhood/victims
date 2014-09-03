@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'students#index'
+  post '/students/victimize', to: 'students#victimize'
 
   resources :students
 
