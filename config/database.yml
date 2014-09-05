@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: victims_production
-  username:
-  password: 
+  database: victims_development
